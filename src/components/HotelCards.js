@@ -31,7 +31,8 @@ const HotelCard = ({ hotel }) => {
   const formatPrice = (price) => price.toFixed(2);
 
   return (
-    <div className="hotel-card">
+    <div class="width">
+        <div className="hotel-card">
       {/* Left: Hotel image and Show More button */}
       <div className="hotel-image-container">
         <img src={hotel.resort.image.url} alt={hotel.resort.image.description} className="hotel-image" />
@@ -41,9 +42,10 @@ const HotelCard = ({ hotel }) => {
 
         {/* "Read more" button in bottom-left of the image */}
         <button className="show-more" onClick={() => setExpanded(!expanded)}>
-          Read more about this hotel  
-          <span className={`arrow ${expanded ? "down" : "up"}`}>▼</span>
-        </button>
+  {expanded ? "Read less about this hotel" : "Read more about this hotel"}
+  <span className={`arrow ${expanded ? "down" : "up"}`}>▼</span>
+</button>
+
       </div>
 
       {/* Right: Hotel info */}
@@ -64,7 +66,7 @@ const HotelCard = ({ hotel }) => {
         <p class="price"><strong>£{formatPrice(hotel.bookingDetails.price.amount)}</strong></p>
         </div>
       </div>
-
+</div>
       {/* Expanded description BELOW everything else */}
       {expanded && (
         <div className="hotel-details">
@@ -72,6 +74,7 @@ const HotelCard = ({ hotel }) => {
         </div>
       )}
     </div>
+    
   );
 };
 

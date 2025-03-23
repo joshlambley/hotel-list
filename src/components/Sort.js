@@ -15,7 +15,7 @@ const Sort = ({ activeSort, onSortChange }) => {
         className={activeSort === "price" ? "active" : ""}
         onClick={() => onSortChange("price")}
       >
-        Sort by price
+        Sort by <strong>price</strong>
       </button>
 
       {/* Sort by Star Rating button */}
@@ -23,7 +23,7 @@ const Sort = ({ activeSort, onSortChange }) => {
         className={activeSort === "stars" ? "active" : ""}
         onClick={() => onSortChange("stars")}
       >
-        Sort by star rating
+        Sort by <strong>star rating</strong>
       </button>
     </div>
   );

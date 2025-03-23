@@ -8,7 +8,7 @@ const Sort = ({ activeSort, onSortChange }) => {
         className={activeSort === "name" ? "active" : ""}
         onClick={() => onSortChange("name")}
       >
-        Sort by <strong>alphabetically</strong>
+        Sort by <strong>alphabetically</strong> 
       </button>
       {/* Sort by Price button */}
       <button class="sort-buttons-button"

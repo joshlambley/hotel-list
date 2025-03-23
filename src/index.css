@@ -1,6 +1,4 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
 
 :root {
   --dark-blue: #17317F;
@@ -8,8 +6,10 @@
   --grey: #CCC;
 }
 
-h3, p {
-  font-family: "Roboto", sans-serif;;
+h3,
+p {
+  font-family: "Roboto", sans-serif;
+  ;
 }
 
 h3 {
@@ -38,15 +38,16 @@ h3 {
   justify-content: center;
   gap: 2rem;
 }
+
 .hotel-card {
   display: flex;
-  align-items: stretch; /* Ensures both sides are the same height */
+  align-items: stretch;
+  /* Ensures both sides are the same height */
   overflow: hidden;
   margin-top: 1.2rem;
   background: white;
   width: 100%;
 }
-
 
 /* Left-side image */
 .hotel-image-container {
@@ -70,7 +71,7 @@ h3 {
   width: 50%;
 }
 
-/* Title, stars, details */
+
 h3 {
   font-size: 1.4rem;
   margin-bottom: 5px;
@@ -88,7 +89,6 @@ h3 {
   padding: 0;
 }
 
-/* Yellow Book Now button section */
 .book-button {
   background-color: var(--yellow);
   text-align: center;
@@ -98,7 +98,6 @@ h3 {
   font-weight: bold;
   font-size: 1.2rem;
   cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: background 0.3s ease;
 }
 
@@ -128,7 +127,7 @@ h3 {
   border-radius: 3px;
 }
 
-/* Expanded text styling */
+
 .hotel-details {
   padding: 10px;
   background: #f8f8f8;
@@ -136,7 +135,7 @@ h3 {
   color: #555;
   overflow-wrap: break-word;
   width: 100%;
-} 
+}
 
 .sort-buttons {
   display: flex;
@@ -154,7 +153,7 @@ h3 {
 .sort-buttons button:nth-child(2) {
   padding: 1rem;
   border: none;
-  
+
 }
 
 .sort-buttons button:nth-child(3) {
@@ -165,4 +164,22 @@ h3 {
 .sort-buttons .active {
   background-color: var(--dark-blue);
   color: white;
+}
+
+.hotel-image-container {
+  position: relative;
+}
+
+.offer-pill {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 5px 10px;
+  background-color: var(--yellow);
+  color: var(--dark-blue);
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  ;
 }

@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from "react";
 import HotelCards from "./components/HotelCards";
 import Sort from "./components/Sort";
-<script src="https://kit.fontawesome.com/026ce2a294.js" crossorigin="anonymous"></script>
 const DATA_URL = "https://static.onthebeach.co.uk/fe-code-test/data.json";
 
 const HotelList = () => {

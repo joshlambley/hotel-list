@@ -67,14 +67,14 @@ const HotelCard = ({ hotel }) => {
             <p className="price"><strong>£{formatPrice(hotel.bookingDetails.price.amount)}</strong></p>
           </div>
         </div>
-      </div>
-
-     
       {expanded && (
         <div className="hotel-details">
           <p>{hotel.resort.overview}</p>
         </div>
       )}
+      </div>
+
+     
     </div>
   );
 };

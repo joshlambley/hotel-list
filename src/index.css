@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+html {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --dark-blue: #17317F;
   --yellow: #FEDC07;
@@ -36,6 +41,11 @@ h3 {
   padding: 2rem;
 }
 
+.hotel-list {
+  margin: 0;
+  padding: 0;
+}
+
 .hotel-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -63,8 +73,6 @@ h3 {
   justify-content: space-between;
   box-sizing: border-box;
 }
-
-
 
 .stars {
   font-size: 1.1rem;
@@ -128,6 +136,7 @@ h3 {
 .sort-buttons {
   display: flex;
   flex-direction: column;
+  margin-top: 1.2rem;
 }
 
 .sort-buttons-button {
@@ -232,5 +241,7 @@ h3 {
     padding: 1rem;
   }
 
-
+  .sort-buttons-button {
+    width: auto;
+  }
 }

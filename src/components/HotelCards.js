@@ -89,7 +89,7 @@ const HotelCard = ({ hotel }) => {
             <strong>{hotel.flightDetails.departureAirport}</strong>
           </p>
           <div className="book-button">
-            <p class="ns">Book now</p>
+            <p class="ns blue">Book now</p>
             <p class="ns price">
               <strong>£{formatPrice(hotel.bookingDetails.price.amount)}</strong>
             </p>

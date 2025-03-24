@@ -46,7 +46,7 @@ const HotelCard = ({ hotel }) => {
 
           {/* Show "Offer" pill if the hotel has less than 5 stars */}
           {hotel.resort.starRating < 5 && (
-            <span className="offer-pill">Offer</span>
+            <span className="offer-pill" data-testid="offer-pill">Offer</span>
           )}
 
           <button className="show-more" onClick={() => setExpanded(!expanded)}>

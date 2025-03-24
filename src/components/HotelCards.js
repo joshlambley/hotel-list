@@ -50,9 +50,15 @@ const HotelCard = ({ hotel }) => {
           )}
 
           <button className="show-more" onClick={() => setExpanded(!expanded)}>
-            {expanded
-              ? "Read less about this hotel"
-              : "Read more about this hotel"}
+            {expanded ? (
+              <>
+                <strong>Read less</strong> about this hotel
+              </>
+            ) : (
+              <>
+                <strong>Read more</strong> about this hotel
+              </>
+            )}
             <span className={`arrow ${expanded ? "down" : "up"}`}>▼</span>
           </button>
         </div>
@@ -75,21 +81,23 @@ const HotelCard = ({ hotel }) => {
             )}
           </p>
           <p className="ns">
-            <strong>{formatDate(hotel.flightDetails.departureDate)}</strong> {" "}
-            for <strong>{hotel.bookingDetails.lengthOfStay} days</strong> 
+            <strong>{formatDate(hotel.flightDetails.departureDate)}</strong> for{" "}
+            <strong>{hotel.bookingDetails.lengthOfStay} days</strong>
           </p>
           <p className="ns">
-            departing from <strong>{hotel.flightDetails.departureAirport}</strong>
+            departing from{" "}
+            <strong>{hotel.flightDetails.departureAirport}</strong>
           </p>
           <div className="book-button">
             <p class="ns">Book now</p>
-            <p  class="ns price">
+            <p class="ns price">
               <strong>£{formatPrice(hotel.bookingDetails.price.amount)}</strong>
             </p>
           </div>
         </div>
         {expanded && (
           <div className="hotel-details">
+            <strong><p class="blue">Overview</p></strong>
             <p>{hotel.resort.overview}</p>
           </div>
         )}
